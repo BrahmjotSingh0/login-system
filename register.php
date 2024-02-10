@@ -1,8 +1,8 @@
 <?php
 session_start();
 $DATABASE_HOST = 'localhost';
-$DATABASEUSER = 'root';
-$DATABASEPASS = '';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
 $DATAB_NAME = 'phplogin';
 
 
