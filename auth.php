@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$DATABASE_HOST = 'localhost';
+$DATABASE_HOST = 'localhost'; 
 $DATABASE_USER = 'root';
 $DATABASE_PASS = '';
 $DATABASE_NAME = 'phplogin';
