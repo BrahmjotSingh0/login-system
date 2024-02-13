@@ -27,9 +27,9 @@ input[type="text"] {
 
 input[type="submit"] {
 	padding: 10px 20px;
-	background-color: #4CAF50;
+	background-color: greenyellow;
 	color: white;
-	border: 1px solid #4CAF50;
+	border: 1px solid greenyellow;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	outline: none;
@@ -91,7 +91,7 @@ li {
    }
   
   header .navigation .menu-list li a {
-	color: #b1d4e0;
+	color: greenyellow;
 	font-size: 1.25rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -122,7 +122,7 @@ li {
   }
   
   .intro-section .intro-content h1 {
-	color: #b1d4e0;
+	color: greenyellow;
 	font-size: 5rem;
 	letter-spacing: -1px;
 	text-transform: uppercase;
@@ -131,14 +131,14 @@ li {
   
   .intro-section .intro-content h6{
 	margin-top: 5px;
-	color: #b1d4e0;
+	color: greenyellow;
 	font-size: 2.5rem;
 	font-weight: 300;
   }
   
   .intro-section .intro-content p {
 	margin-top: 40px;
-	color: #b1d4e0;
+	color: greenyellow;
   }
   
   .intro-content .tagline {
@@ -161,7 +161,7 @@ li {
 	bottom:0;
 	height:0;
 	opacity:0;
-	color: #b1d4e0;
+	color: rgb(109, 157, 36);
 	text-transform: uppercase;
 	word-spacing: 5px;
 	  text-align: center;
@@ -220,7 +220,7 @@ li {
 	height: 100%;
 	left: -25%;
 	width: 0%;
-	background-color: #3498db;
+	background-color: greenyellow;
 	transform: skew(50deg);
 	transition-duration: 1s;
 	z-index: 1;
@@ -282,7 +282,7 @@ li {
 	}
   
 	header .navigation .menu-list li a:hover{
-	  color: #b1d4e0;
+	  color: greenyellow;
 	  padding-left: 30px;
 	  background: rgba(177, 212, 224, 0.2);
 	}
