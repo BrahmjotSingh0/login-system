@@ -25,24 +25,46 @@ $stmt->close();
 ?>
 
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Notes | Profile</title>
-		<link href="home.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	</head>
-	<body class="loggedin">
-		<nav class="navtop">
-			<div>
-				<h1>Notes | Profile</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-			</div>
-		</nav>
-		<div class="content">
-			<h2>Profile Page</h2>
-			<div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<!--====== Header Section Start ======-->
+<header>
+  <nav class="navigation">
+
+    <!-- Logo -->
+    <div class="logo">
+      <h1>Notes | Profile</h1>
+    </div>
+    
+    <!-- Navigation -->
+    <ul class="menu-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.php">Account</a></li>
+      <li><a href="logout.php">Logout</a></li>
+    </ul>
+
+    <div class="humbarger">
+      <div class="bar"></div>
+      <div class="bar2 bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  
+  <!-- ==== Intro Section Start ==== -->
+  <div class="intro-section" id="home">
+    <div class="bg-img"></div>
+    <div class="intro-content">
+      <h1>Profile Page</h1>
+	  <div class="content">
+			<div><center>
 				<p>Your account details are below:</p>
 				<table>
 					<tr>
@@ -58,7 +80,30 @@ $stmt->close();
 						<td><?=$email?></td>
 					</tr>
 				</table>
+				</center>
 			</div>
 		</div>
-	</body>
+    </div>
+  </div>	
+</header>
+
+<script>
+    $(document).ready(function(){
+
+      //hamburger Toggle
+  $('.humbarger').click(function(event){
+  $('.menu-list').slideToggle(500);
+  event.preventDefault();
+
+  $('.menu-list li a').click(function(event) {
+      if ($(window).width() < 768) {
+        $('.menu-list').slideUp(500);
+        event.preventDefault(); 
+      }
+    });
+  });
+
+  });
+</script>
+</body>
 </html>
