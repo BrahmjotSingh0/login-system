@@ -72,9 +72,8 @@ li {
   
   header .navigation .menu-list {
 	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display:  inline-flex;
+	align-items: right;
 	width: 45%;
 	margin: auto 20px auto 0;
   }
@@ -249,7 +248,7 @@ li {
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
 	header .navigation .menu-list {
-	  width: 60%;
+	  width: 35%;
 	}
   
 	header .navigation .menu-list li a{
