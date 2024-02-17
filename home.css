@@ -10,44 +10,7 @@
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
   }
-  
-form {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-}
-
-input[type="text"] {
-	width: 80%;
-	padding: 10px;
-	border: 1px solid #ccc;
-	box-shadow: rgb(109, 157, 36);
-	border-radius: 5px 0 0 5px;
-	outline: none;
-}
-
-input[type="submit"] {
-	padding: 10px 20px;
-	background-color: greenyellow;
-	color: white;
-	font-weight: bold;
-	border: 1px solid greenyellow;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-	outline: none;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-li {
-	margin-bottom: 10px;
-	padding: 10px;
-	border-radius: 5px;
-}
-
+  a
   header .navigation {
 	display: flex;
 	justify-content: space-between;
